@@ -1,0 +1,26 @@
+﻿<Window x:Class="DiskTestForUniver.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiskTestForUniver"
+        mc:Ignorable="d"
+        Closing="Window_Closing"
+        ResizeMode="NoResize"
+        Title="Тест диска" Height="366" Width="525">
+    <Grid Margin="0,0,0,-19">
+        <Button Content="Запись в файл" HorizontalAlignment="Left" Margin="38,253,0,0" VerticalAlignment="Top" Width="119" Click="WriteToDriveButton_onClick"/>
+        <Button Content="Остановить запись" HorizontalAlignment="Left" VerticalAlignment="Top" Width="119" Margin="38,289,0,0" Click="StopWriteButton_onClick"/>
+        <Button Content="Закончить сессию" HorizontalAlignment="Left" Margin="324,253,0,0" VerticalAlignment="Top" Width="163" Click="SessionStopButton_onClick" Height="56"/>
+        <Button Content="Сменить папку" HorizontalAlignment="Left" Margin="324,86,0,0" VerticalAlignment="Top" Width="163" Height="150" Click="ChangeDriveButton_onClick"/>
+        <TextBox IsReadOnly="True" Name="DisplayStateTextBox" HorizontalAlignment="Left" Height="23" Margin="104,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196"/>
+        <TextBox IsReadOnly="True" Name="FilePathTextBox" HorizontalAlignment="Left" Height="24" Margin="147,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340"/>
+        <TextBox VerticalScrollBarVisibility="Auto" IsReadOnly="True" Name="LogTextBox" HorizontalAlignment="Left" Height="113" Margin="38,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="262"/>
+        <Button Content="Чтение файла" Click="ReadFileButton_onClick" HorizontalAlignment="Left" Margin="181,253,0,0" VerticalAlignment="Top" Width="119"/>
+        <Button Content="Открыть файл" Click="OpenFileButton_onClick" HorizontalAlignment="Left" Margin="38,10,0,0" VerticalAlignment="Top" Width="89" Height="55"/>
+        <Button Content="Остановить чтение" Click="StopReadFileButton_onClick" HorizontalAlignment="Left" Margin="181,289,0,0" VerticalAlignment="Top" Width="119"/>
+        <Label Content="Процесс:" HorizontalAlignment="Left" Margin="38,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.026,-0.385" Width="61"/>
+        <Label Content="Путь до файла:" HorizontalAlignment="Left" Margin="147,10,0,0" VerticalAlignment="Top" Width="92"/>
+
+    </Grid>
+</Window>
