@@ -1,4 +1,4 @@
-##### ScreenTester
+##### DriveTester
 Drive tester allows you to test your harddrives.
 
 ##### License
